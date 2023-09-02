@@ -1,0 +1,38 @@
+<li class="list-group-item" #li>
+    <input 
+        type="checkbox"
+        class="form-check-input my-1"
+        [checked]="todo.isComplete"
+        (change)="changeTodoStatus()"
+    >
+    <span class="todo-item" [ngClass]="{'text-decoration-line-through': todo.isComplete}">{{ i + 1 }}. {{ todo.name | firstLetterUppercase }}</span>
+
+    <button type="button" class="btn btn-danger btn-sm mx-2" (click)="toggleModal()">Usuń</button>
+    <button type="button" class="btn btn-info btn-sm mx-2" (click)="navigateToDetails()">Szczegóły</button>
+</li>
+
+<!-- <p>{{ 1.3 | number: '' }}</p>
+<p>{{ 0.25 | percent: '' }}</p>
+<p>{{ 10 | currency: 'PLN': 'code': '' }}</p>
+<p>{{ '2023-03-01' | date: 'shortDate': '' }}</p> -->
+
+
+<!-- <p> {{ todo.name }} </p>
+<p> {{ todo.name | uppercase }} </p> -->
+
+<!-- <p> {{ todo }} </p>
+<p> {{ todo | json }} </p>
+<pre> {{ todo | json }} </pre> -->
+<!-- <p> {{ 'test tytułu' | titlecase }} </p> -->
+<!-- <p> {{ 'przytnij' | slice: 0: 4 }} </p> -->
+<!-- <p *ngFor="let item of keyValueTest | keyvalue">
+    {{item.key}}: {{item.value}}
+</p> -->
+
+<app-modal *ngIf="openModal" (close)="toggleModal()" [title]="'Czy na pewno chcesz usunąć zadanie o numerze ' + id + '?'">
+    <div class="d-flex justify-content-end" #modalDiv>
+        <!-- <input type="checkbox" #check (change)="0"> -->
+        <button class="btn btn-danger btn-sm mx-2" (click)="deleteTodo()">Usuń</button>
+        <button class="btn btn-info btn-sm" (click)="toggleModal()">Anuluj</button>
+    </div>
+</app-modal>

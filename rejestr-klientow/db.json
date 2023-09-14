@@ -28,6 +28,24 @@
       "phone": "123456789",
       "address": "Miasto ul. Testowa 12",
       "postcode": "111-11"
+    },
+    {
+      "id": 2,
+      "firstname": "Test2",
+      "surname": "Testowy2",
+      "email": "test2@gmail.com",
+      "phone": "123456789",
+      "address": "Miasto ul. Testowa 12",
+      "postcode": "111-11"
+    },
+    {
+      "id": 3,
+      "firstname": "Test3",
+      "surname": "Testowy3",
+      "email": "test3@gmail.com",
+      "phone": "123456789",
+      "address": "Miasto ul. Testowa 12",
+      "postcode": "111-11"
     }
   ]
 }

@@ -30,22 +30,31 @@
       "postcode": "111-11"
     },
     {
-      "id": 2,
-      "firstname": "Test2",
-      "surname": "Testowy2",
-      "email": "test2@gmail.com",
-      "phone": "123456789",
-      "address": "Miasto ul. Testowa 12",
-      "postcode": "111-11"
-    },
-    {
-      "id": 3,
       "firstname": "Test3",
       "surname": "Testowy3",
       "email": "test3@gmail.com",
       "phone": "123456789",
       "address": "Miasto ul. Testowa 12",
-      "postcode": "111-11"
+      "postcode": "111-11",
+      "id": 3
+    },
+    {
+      "firstname": "aaaa",
+      "surname": "aaaa",
+      "email": "aa@aaa",
+      "phone": "24142142121",
+      "address": "sadasfgas",
+      "postcode": "asfasfsaf",
+      "id": 4
+    },
+    {
+      "firstname": "Nikodem",
+      "surname": "Wójciak",
+      "email": "nikodem1703@gmail.com",
+      "phone": "725106967",
+      "address": "Bogusław 49",
+      "postcode": "74-404",
+      "id": 5
     }
   ]
 }

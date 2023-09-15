@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnDestroy, ViewChild } from '@angular/core';
-import { ClientsService } from '../../core/services/clients.service';
+import { ClientsService } from '../../../core/services/clients.service';
 import { MatTableDataSource } from '@angular/material/table';
-import { Client } from '../../core/models/client.model';
+import { Client } from '../../../core/models/client.model';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import {

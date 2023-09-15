@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Edytuj klienta</h1>
+<mat-dialog-content>
+  <app-client-form
+    [client]="data.client"
+    [editMode]="true"
+    (closeDialog)="closeDialog()"
+  ></app-client-form>
+</mat-dialog-content>

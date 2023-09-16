@@ -55,6 +55,15 @@
       "address": "Bogusław 49",
       "postcode": "74-404",
       "id": 5
+    },
+    {
+      "firstname": "Andrzej",
+      "surname": "Duda",
+      "email": "duda@gog.pl",
+      "phone": "21312424",
+      "address": "lkasnfkna",
+      "postcode": "77-777",
+      "id": 6
     }
   ]
 }

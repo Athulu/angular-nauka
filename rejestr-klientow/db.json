@@ -64,6 +64,15 @@
       "address": "lkasnfkna",
       "postcode": "77-777",
       "id": 6
+    },
+    {
+      "firstname": "Agnieszka",
+      "surname": "Skowys",
+      "email": "agnieszka@gmail.com",
+      "phone": "+48123456789",
+      "address": "Warszawa ul. testowa",
+      "postcode": "11-111",
+      "id": 7
     }
   ]
 }

@@ -6,6 +6,7 @@ import { Router } from '@angular/router';
 import { ClientsService } from 'src/app/modules/core/services/clients.service';
 import { Observer } from 'rxjs';
 import { postcodeValidator } from 'src/app/modules/shared/validators/postcode.validator';
+import { ClientValidators } from 'src/app/modules/shared/validators/client.validators';
 
 @Component({
   selector: 'app-client-form',
@@ -91,7 +92,7 @@ export class ClientFormComponent implements OnInit {
       }),
       postcode: new FormControl(this.editMode ? this.client.postcode : '', {
         nonNullable: true,
-        validators: [Validators.required, postcodeValidator()],
+        validators: [Validators.required, ClientValidators.postcode()],
       }),
     });
   }

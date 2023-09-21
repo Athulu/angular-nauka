@@ -1,0 +1,12 @@
+<mat-form-field appearance="fill" class="prefix">
+  <mat-label>Kierunkowy</mat-label>
+  <input matInput [formControl]="numberPrefixControl" />
+  <mat-error *ngIf="numberPrefixControl.errors">Zły numer kierunkowy</mat-error>
+</mat-form-field>
+<mat-form-field appearance="fill" class="number">
+  <mat-label>Numer telefonu</mat-label>
+  <input matInput [formControl]="numberControl" />
+  <mat-error *ngIf="numberControl.errors"
+    >Numer powinien zawierać 9 znaków</mat-error
+  >
+</mat-form-field>

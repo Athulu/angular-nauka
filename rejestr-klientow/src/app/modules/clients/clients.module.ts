@@ -10,7 +10,14 @@ import { DeleteClientDialogComponent } from './components/client/delete-client-d
 import { EditClientDialogComponent } from './components/client/edit-client-dialog/edit-client-dialog.component';
 
 @NgModule({
-  declarations: [ClientsComponent, ClientsTableComponent, ClientComponent, ClientFormComponent, DeleteClientDialogComponent, EditClientDialogComponent],
+  declarations: [
+    ClientsComponent,
+    ClientsTableComponent,
+    ClientComponent,
+    ClientFormComponent,
+    DeleteClientDialogComponent,
+    EditClientDialogComponent,
+  ],
   imports: [SharedModule, ClientsRoutingModule],
   exports: [ClientsComponent],
 })

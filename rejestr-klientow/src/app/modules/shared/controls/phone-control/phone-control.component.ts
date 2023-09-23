@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { Component, OnDestroy } from '@angular/core';
 import { Subscription, combineLatest } from 'rxjs';
 import {
@@ -23,6 +24,7 @@ export class PhoneControlComponent implements ControlValueAccessor, OnDestroy {
   numberPrefixControl = new FormControl('', [Validators.required]);
   numberControl = new FormControl('', [Validators.required]);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   onChange = (value: string | null) => {};
   onTouch = () => {};
   sub = new Subscription();

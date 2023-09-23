@@ -1,6 +1,7 @@
+/* eslint-disable prettier/prettier */
+
 import { FormControl } from '@angular/forms';
 
-/* eslint-disable prettier/prettier */
 export interface ClientResponse {
   id: number;
   firstname: string;

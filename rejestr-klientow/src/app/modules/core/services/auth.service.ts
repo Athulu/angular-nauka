@@ -38,6 +38,10 @@ export class AuthService {
     );
   }
 
+  isLoggedIn(): boolean {
+    return !!this.user.getValue();
+  }
+
   register(userData: PostUser): Observable<PostUserResponse> {
     return this.http.post<PostUserResponse>(`${this.apiUrl}/users`, userData);
   }

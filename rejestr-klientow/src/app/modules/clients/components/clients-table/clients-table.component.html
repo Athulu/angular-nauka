@@ -18,7 +18,9 @@
 
       <ng-container matColumnDef="firstname">
         <th mat-header-cell *matHeaderCellDef mat-sort-header>Imię</th>
-        <td mat-cell *matCellDef="let row">{{ row.firstname }}</td>
+        <td mat-cell *matCellDef="let row">
+          <span [appHighlight]="'red'">{{ row.firstname }}</span>
+        </td>
       </ng-container>
 
       <ng-container matColumnDef="surname">

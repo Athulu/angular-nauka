@@ -8,6 +8,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { A11yModule } from '@angular/cdk/a11y';
 
 @NgModule({
@@ -22,6 +23,7 @@ import { A11yModule } from '@angular/cdk/a11y';
     MatSortModule,
     MatPaginatorModule,
     MatDialogModule,
+    MatProgressSpinnerModule,
     A11yModule,
   ],
 })
